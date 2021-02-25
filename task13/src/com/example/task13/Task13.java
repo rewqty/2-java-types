@@ -3,10 +3,10 @@ package com.example.task13;
 public class Task13 {
 
     public static char toUpperCase(char c) {
+        return (char) (c - 32);
 
-        // TODO привести букву к верхнему регистру
-
-        return c;
+        // Либо просто вызвать toUpperCase() метод класса Character
+        // return Character.toUpperCase(c);
     }
 
     public static void main(String[] args) {
