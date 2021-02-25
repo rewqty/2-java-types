@@ -4,9 +4,12 @@ public class Task06 {
 
     public static int solution(int x, int y) {
 
-        // TODO напишите здесь свою корректную реализацию этого метода, вместо сеществующей
-
-        return 0;
+        int sum = x + y;
+        String num = String.valueOf(sum);
+        if (num.charAt(0) == '-')
+            return num.length() - 1;
+        else
+            return num.length();
     }
 
     public static void main(String[] args) {
